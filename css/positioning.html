@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container{ 
+            border: black;
+            background-color: #f6ff79;
+            height: 5000px;
+            position: relative;
+        }
+    
+        /*CSS Positions: static (default), absolute, relative, fixed, sticky*/
+        .box{
+            display: inline-block;
+            border: rgb(255, 22, 22) solid 2px;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        #box3{
+            /*relative: relative to its normal position and will leave gap to its noraml position*/
+            /* position: relative; */
+            
+            /*absolute: absolute to its above parent*/
+            /* position: absolute; */
+            /* top: 5px; */
+            /* right: 5px; */
+
+            /* fixed: positions the element relative to the browser window */
+            /* position: fixed;
+            right: 15px;
+            bottom: 25px; */
+
+            /* sticky */
+            position: sticky;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

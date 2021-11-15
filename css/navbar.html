@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        .navbar{
+            background-color: green;
+            border-radius: 16px;         
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none ;
+            margin: 10px 15px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none;
+            color: yellow;
+        }
+        .search{
+            float: right;
+            padding: 8px 50px;
+        } 
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 4px 6px;
+            margin-left: 10px;
+        }
+        .heading{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(255, 24, 24);
+            margin: auto;
+            width: 40%;
+            border: black solid 3px;
+            display: contents;
+        }
+        .heading img{
+            display: inline-block;
+        }
+        .heading h1{
+            display: block;
+            margin: 10px 0px;
+            float: left;
+            padding: 19px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <img src="E:\Projects\Web_practice\box.png" alt="courier icon" style="width:100px; height: 100px;">
+            <h1>Alex Courier Services</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" id="search" name="search" placeholder="Search Phones">
+                </div>
+            </ul>
+            
+        </nav>
+    </header>
+</body>
+
+</html>

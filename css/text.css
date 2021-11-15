@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#textcss{
+    text-align: left;
+    color: blueviolet;
+    font-family: 'Spicy Rice', cursive;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    direction: ltr;
+    text-indent: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 1px 1px pink;
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#fontcss{
+    font-size: 40px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-style: initial;
+    font-weight: bolder;
+    font-variant: normal;
+}

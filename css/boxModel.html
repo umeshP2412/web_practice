@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #d0e8f787;
+            border: 3px solid #535bff;
+            border-radius: 22px;
+            /* padding-top: 10px; 
+            padding-left: 20px;*/
+            /* padding/margin = top right bottom left */
+            /* padding: 10px 0px 10px 15px; */
+            /* or x and y direction you can give ---> padding/margin = y(top&bottom) x(left&right) */
+            padding: 15px 25px;
+            margin: 15px 25px;
+            width: 280px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed veniam perferendis consectetur, maxime rem facere nobis error? Rem vel dolores non? Rerum, quas.</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed veniam perferendis consectetur, maxime rem facere nobis error? Rem vel dolores non? Rerum, quas.</p>
+    </div>
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed veniam perferendis consectetur, maxime rem facere nobis error? Rem vel dolores non? Rerum, quas.</p>
+    </div>
+    
+</body>
+</html>

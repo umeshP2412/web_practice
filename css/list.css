@@ -1,0 +1,16 @@
+*{
+    margin: 2px;
+    padding: 1px 10px;
+}
+ul{
+    list-style-image: circle outside url("D:/Images/RDJpics/885176.jpg");
+}
+ol{
+    list-style-type: lower-roman;
+}
+ol:hover{
+    color: red
+}
+ul:hover{
+    color: blue;
+}

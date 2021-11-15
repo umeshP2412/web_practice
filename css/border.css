@@ -1,0 +1,50 @@
+*{
+    margin: 2px;
+    padding: 4px;
+}
+.bordercss{
+    width: 500px;
+    height: 300px;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 25px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /*above 3 can be written as \/ \/ */
+    /*border: 3px black dashed;*/ 
+    border-radius: 20px;
+}
+.buttoncss{
+    /*color: white;*/
+    background-color: cadetblue;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    text-shadow: 1px 2px black;
+    border-style: inset;
+    
+}
+
+a:link{
+    align-self: center;
+    padding: 0.5em;
+    text-decoration: none;
+    color: white;
+    
+}
+a:hover{
+    color: white;
+}
+.buttoncss:hover{
+    background-color: orange;
+}
+.buttoncss:active{
+    border-style: outset;
+}
+a:active{
+    background-color: cadetblue;
+    width: 60px;
+    height: 25px;
+    border-style: outset;
+}

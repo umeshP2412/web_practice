@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 3px solid purple;
+            width: 45vw;
+            margin: 45px auto;
+        }
+        #fruits{
+            float: left;
+            width: 45%;
+        }
+        #computers{
+            float: right;
+            width: 45%;
+        }
+        #stationary{
+            /*float: left;*/
+            clear: both;
+            width: 97%;
+        }
+        .items{
+            border: 3px solid green;
+            margin: 12px 10px;
+            padding: 2px 10px;
+            background-color: #deedff;
+        }
+        h2, p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruits" class="items">
+            <h2>Fruits</h2>
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta doloribus ut consequatur corporis tenetur consectetur illum iste. Omnis nemo temporibus aperiam, natus minima tempora maxime ipsa nesciunt fugit suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero magnam velit ducimus unde commodi facere ex maiores, qui quis enim quia, similique non rerum eum praesentium exercitationem iste voluptate, blanditiis sed ipsam atque.
+            </p>
+        </div>
+        <div id="computers" class="items">
+            <h2>Computers</h2>
+            <p id="computerspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta doloribus ut consequatur corporis tenetur consectetur illum iste. Omnis nemo temporibus aperiam, natus minima tempora maxime ipsa nesciunt fugit suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero magnam velit ducimus unde commodi facere ex maiores, qui quis enim quia, similique non rerum eum praesentium exercitationem iste voluptate, blanditiis sed ipsam atque.
+            </p>
+        </div>
+        <div id="stationary" class="items">
+            <h2>Stationary</h2>
+            <p id="stationarypara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi soluta doloribus ut consequatur corporis tenetur consectetur illum iste. Omnis nemo temporibus aperiam, natus minima tempora maxime ipsa nesciunt fugit suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam iusto esse odit a rem corrupti, ea temporibus. Esse sunt deleniti non laborum dolorum odit natus architecto accusamus, hic excepturi sequi atque deserunt laboriosam!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

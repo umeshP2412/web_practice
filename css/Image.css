@@ -1,0 +1,27 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+}
+
+div#backImg{
+    width: 100%;
+    height: 100vh;
+    background-color:   orange;
+    background-image: url('D:/Images/RDJpics/Avengers_449.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    opacity: 0.5;
+}
+
+#backImg2{
+    width: 100%;
+    height: 100vh;
+   /* background-color:   orange;*/
+    background-image: url('D:/Images/RDJpics/RDJ22.jpg');
+    background-repeat: repeat-y;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+}
+
