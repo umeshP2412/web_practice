@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index and scaling</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position: relative;
+            top:49px;
+            z-index: 2;
+            background-color: red;
+        }
+        #box2{
+            position: relative;
+            top:14px;
+            /* z-index will work for only position: relative absolute fixed or sticky */
+            /* whichever element has higher z-index will be on top */
+            z-index: 10;
+
+            /* display: none; this will hide its content/box and remove its space also */
+            /* visibility: hidden; this will hide its content/box but not remove its space */
+            background-color: blue;
+        }
+        #box3{
+            background-color: green;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
