@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox tutorial</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 520px;
+            border: 2px solid black;
+            /* Initialize container as a flex box */
+            display: flex;
+
+            /* flox properties for flex box */
+            /* default flex-direction is row */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* flex-wrap sets the wrapping behavior for flex items, when we small screen items will wrap to down page */
+            /* flex-wrap: wrap; */
+
+            /* by below flex-flow we can set both direction and wrapping behavior */
+            /* flex-flow: row wrap; */
+
+            /* justtify-content will apply property for objects inside box */
+            /* justify-content: center will center all elements */
+            /* justify-content: space-around fills space around objects and make object fill all around box */
+            /* justify-content: space-between fills space between objects without caring end point */ /* justify-content creates space in horizontal space */
+            /* justify-content: space-between; */
+
+            /* align-items creates space in vertical space */
+            /* align-items: center makes object in center in vertical space */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+        }
+        .item{
+            width: 10em;
+            height: 10em;
+            background-color: #ff8787;
+            border: 2px solid rgb(33, 74, 255);
+            margin: 10px;
+            padding: 3px;
+            /* display: inline-block; */
+        }
+        #item1{
+            /* flex property for item */
+            /* higher the order it wil show at less presidential last */
+            order: 2;
+            /* flex-grow increase item size more when we expand screen  */
+            /* flex-grow: 3; */
+            /* flex-shrink decrease item size more when we shrink screen  */
+            /* flex-shrink: 3; */
+        }
+        #item2{
+            flex-basis: 300px;
+            /* when flex-direction: is given row then flex-basis controls width   --default */
+            /* when flex-direction: is given column then flex-basis controls height   --default */
+            /* order: 40; */
+        }
+        #item3{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flexbos tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+</body>
+</html>
