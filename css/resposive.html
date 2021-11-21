@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Size Units</title>
+    <style>
+        /* html {
+            font-size: 3px;
+        } */
+        .container{
+            width: 100vw;
+            /* width: 100%; */
+            height: 100vh;
+            /* height: 100%; */
+            font-size:10px;
+            border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 5em;
+            padding: 2em; */
+            /* em means it will multiply size by its parent element's size, */
+            /* eg. container font-size--> 10px them 3em means 3*10--> 30px , and padding margin = 3em would be 10*3*3= 90px*/
+        }
+        #second{
+            /* font-size: 3rem;
+            padding: 5rem; */
+            /* rem means it will multiply size by its parent element's size i.e, html element 3px * 3rem = 9px */
+            /* it works same multiple by parent element's size only e.g, 5rem* 3px = 15px unlike em */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is 1st heading</h1>
+        <h1 id="second">This is 2nd heading</h1>
+        <h1 id="third">This is 3rd heading</h1>
+    </div>
+</body>
+</html>

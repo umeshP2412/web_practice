@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+.container{
+    display: inline-block;
+}
 #textcss{
     text-align: left;
     color: blueviolet;
@@ -13,4 +16,17 @@
     text-transform: uppercase;
     text-decoration: none;
     text-shadow: 1px 1px pink;
+}
+
+.printtext{
+    position: absolute;
+    right: 4px;
+    bottom: 3px;
+
+}
+
+@media only print {
+    .printtext{
+        display:block;
+    }
 }
