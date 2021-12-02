@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        /* div p{
+            color: yellow;
+            font-weight: bold;
+        } */
+
+        /* div > p will allow only p which is inside div */
+        /* div > p{
+            color: red;
+            background-color: yellow;
+        } */
+
+        /* div + p will allow only p which is after div.. ..+ means which is sibling */
+        div + p{
+            color: green;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>This more on Selector</h1>
+    <div class="container1">
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>
