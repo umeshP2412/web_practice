@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables/ Custom variables</title>
+    <style>
+        :root{
+
+            --primary-color: skyblue;
+            --secondary-color: rgb(252, 172, 255);
+            --border-color: red;  
+            --widthm: 570px;  
+        }
+        .container{
+            --local-color: lightpink;
+            display: flex;
+            margin: auto;
+            width: var(--widthm);
+            background-color: var(--primary-color);
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: var(--secondary-color);
+            border: 1px solid var(--border-color);
+            box-shadow: 6px 6px 10px black;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

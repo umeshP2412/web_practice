@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            text-align: center;
+            width: 200x;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: lightgreen;
+            animation: umesh1;
+            animation-duration: 8s;
+            /* animation-iteration-count: 5; */
+            animation-fill-mode: initial;
+            /* animation-delay: 2s; */
+            /* animation-direction: alternate-reverse; */
+            animation-timing-function: ease-in-out;
+
+        }
+/* 
+        @keyframes umesh1 {
+            from {
+                width: 200px;
+                height: 250x;
+                background-color: aqua;
+            }
+
+            to {
+                width: 400px;
+                height: 75px;
+                background-color: blue;
+            }
+        } */
+        @keyframes umesh1{
+            0%{
+                width: 200px;
+                height: 200px;
+            }
+            25%{
+                height: 200px;
+                width: 350px;
+            }
+            50%{
+                height: 350px;
+                width: 350px;
+            }
+            75%{
+                height: 350px;
+                width: 200px;
+            }
+            100%{
+                height: 200px;
+                width: 200px;
+            }
+        }
+        .container1{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+    <div class="container1">
+        <h2>Moving text</h2>
+    </div>
+</body>
+
+</html>
