@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+            z-index: -1;
+        }
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: grey;
+        }
+        .logo{
+            width: 30%;
+            line-height: 58px;
+            /* color: blanchedalmond; */
+            text-decoration: mediumpurple;
+            text-align: center;
+            background-color: mediumpurple;
+            float: left;
+        }
+        .logo b{
+            color: moccasin;
+        }
+        .menu{
+            width: 70%;
+            line-height: 60px;
+            float: right;
+        }
+        .menu::before{
+            background-color: lightpink;
+            
+        }
+        ul{
+            list-style: none;
+            /* float: right; */
+        }
+        li{
+            color: oldlace;
+            display: inline-block;
+            border: 1px solid black;
+            padding: 0px 10px;    
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><b>PATIL TECHNICAL</b></div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS9_Events&Listening</title>
+    <style>
+        #togglebtn{
+            background-color: #ff1c1c;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: 2px solid #ccc;
+            cursor: pointer;
+            border-radius: 6px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Events&Listening Example. Please Open Console</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime porro cumque, corporis eius magnam ullam, excepturi rem enim voluptatem non, quos soluta? Excepturi asperiores corporis esse porro atque rerum nemo maxime fuga sit possimus mollitia animi tenetur quis omnis numquam assumenda voluptatum suscipit maiores inventore quod alias, similique quae amet! Placeat consequuntur facere suscipit minus ipsam sunt nam cum corporis possimus mollitia earum ipsa amet sapiente, aperiam fugit aliquid provident error pariatur, repudiandae tenetur eos dolorum quia iusto! Ea pariatur error sint delectus excepturi ipsum. Voluptate, eius! Hic ducimus vero illum, eius unde a labore maxime ex ratione repellendus harum.</p>
+    </div>
+    <button id="togglebtn" onclick="togglehide()" onchange="changecolor()">Hide</button>
+   <script>
+       var para = document.getElementById('para');
+       var btn = document.getElementById('togglebtn');
+
+       
+       
+       function changecolor(){
+           btn.style.backgroundColor = '#1cff1c';
+       }
+       function togglehide(){
+           if(para.style.display == 'none'){
+               para.style.display = 'block';
+               btn.innerHTML = 'Hide';
+            }
+            else{
+                para.style.display = 'none';
+                btn.innerHTML = 'Show';
+            }
+        }
+        
+
+        para.addEventListener('mouseover', function(){
+            para.style.color = 'red';
+        });
+ 
+        para.addEventListener('mouseout', function(){
+            para.style.color = 'black';
+        });
+   </script>
+</body>
+</html>

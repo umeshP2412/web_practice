@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Rows&Columns</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr;
+            grid-template-rows: repeat(4, 1fr);
+            /* column-gap: 1.5rem;
+            row-gap: 1rem; */
+            gap: 1rem;
+        }
+        .box{
+            background-color: crimson;
+            /* height: auto; */
+            border: 2px solid rgb(12, 8, 8);
+            padding: 25px;
+        }
+        .box:first-child{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item No-1</div>
+        <div class="box">Item No-2</div>
+        <div class="box">Item No-3</div>
+        <div class="box">Item No-4</div>
+        <div class="box">Item No-5</div>
+        <div class="box">Item No-6</div>
+        <div class="box">Item No-7</div>
+        <div class="box">Item No-8</div>
+        <div class="box">Item No-9</div>
+        <div class="box">Item No-10</div>
+        <div class="box">Item No-11</div>
+        <div class="box">Item No-12</div>
+        <div class="box">Item No-13</div>
+        <div class="box">Item No-14</div>
+        <div class="box">Item No-15</div>
+        <div class="box">Item No-16</div>
+    </div>
+</body>
+</html>

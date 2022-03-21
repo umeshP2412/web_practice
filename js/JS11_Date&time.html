@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS11_Date&time</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Ths is date and time tutorial, please open console</h1>
+    </div>
+    <span id="dt"></span>
+    <script>
+        let d = new Date();
+        console.log(d);
+
+        let d1 = new Date(0);
+        console.log(d1);
+
+        let d2 = new Date(1000);
+        console.log(d2);
+
+        let d3 = new Date("2022-03-01");
+        console.log(d3);
+
+        // let d4 = new Date(year, month, day, hours, minutes, seconds, milliseconds);
+        let d5 = new Date(2030, 5, 30, 10, 30, 0, 0);
+        console.log(d5);
+
+        let d6 = new Date(2030, 2, 32, 10, 30, 0, 0);
+        console.log(d6);
+
+        let yr = d6.getFullYear()
+        console.log(yr)
+
+        let mt = d6.getMonth()
+        console.log(mt)
+
+        let day = d6.getDate()
+        console.log(day)
+
+        let hr = d6.getHours()
+        console.log(hr)
+
+        let nn= Date.now();
+
+        let dt = document.getElementById('dt');
+        dt.innerHTML = nn;
+    </script>
+</body>
+</html>

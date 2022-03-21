@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS7_for_while_forEach</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is forEach Example. Please Open Console</h1>
+    </div>
+    <script>
+        let friends = ["Umesh", "Suresh", "Ramesh", "Rajesh", "Suresh"];
+        // console.log(friends);
+
+        /*
+        for(let i=0; i<friends.length; i++){
+            console.log("Hello " + friends[i]);
+        }
+        */
+    //    friends.forEach(
+    //        function frnd(value){
+    //             console.log("Hello " + value + " , Using forEach");
+    //        }
+    //    );
+/*
+    for (value of friends){
+        console.log(`Hello ${value} , Using for of loop`);
+    }
+*/
+/*
+    for (j in friends){
+        console.log(`Hello ${friends[j]} , Using for in loop`);
+    }
+*/
+
+/*
+    let i = 5;
+    while(i>2){
+        console.log(`Hello ${i} , Using while loop`);
+        i--;
+    }
+*/
+
+    let j = 7;
+    do{
+        console.log(`Hello ${j} , Using do while loop`);
+        j--;
+    }
+    while(j>9);
+    </script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodelst Form Example</title>
+</head>
+<style>
+    body {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 50%;
+        height: 100%;
+        /* background-color: #7e6f1a; */
+        padding: 10px;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .container-form {
+        width: 100%;
+        height: 100%;
+        background-color: #ffed86;
+        padding: 10px;
+        border: 2px solid #7e6f1a;
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        border-radius: 3px;
+    }
+
+    input[type="submit"] {
+        background-color: #ff934a;
+        color: #000000;
+        border: none;
+        border-radius: 3px;
+        padding: 5px;
+        cursor: pointer;
+        box-shadow: #000000 2px 3px 5px;
+    }
+    tr:last-child{
+        margin: 100px;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="container-form">
+            <form action="#" onsubmit="submit()" class="formcls">
+                <table>
+                    <!-- <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="Enter your Name" required></input>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="email" name="name" id="email" placeholder="Enter your Email"></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="pass" id="pass" placeholder="Enter your Password"></input>
+                        </td>
+                    </tr>
+                    <tr style="margin-top: 30px;">
+                        <td>
+                            <input type="submit" value="LogIn" onclick="LogIn()"> 
+                        </td>
+                        <td>
+                            <input type="submit" value="SignUp" onclick="SingUp()"> 
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+<script>
+    function LogIn(){
+
+    }
+    function SingUp(){
+
+    }
+
+    let myNodeList = document.querySelectorAll(".container-form");
+    console.log(myNodeList);
+    console.log(myNodeList[0].nextSibling);
+    console.log(myNodeList.length);
+</script>
+</html>

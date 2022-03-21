@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <div class="fm" align="left">
+        <table>
+            <form name="myForm" action="submit.html" method="post" autocomplete="on">
+                <tr>
+                    <th><label for="fName">&nbsp First Name:</label></th>
+                    <th><input type="text" name="fName" id="fName" size="20"></input></th>
+                </tr>
+                <tr>
+                    <th><label for="lName">&nbsp Last Name:</label></th>
+                    <th><input type="text" name="lName" id="lName" size="20"></input></th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="dob">&nbsp Date of Birth:</lable>
+                    </th>
+                    <th><input type="date" name="dob" id="dob"></input></th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="country">&nbsp Date of Birth:</lable>
+                    </th>
+                    <th>
+                        <select name="country" id="country">
+                            <option value="">Select Country</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                            <option value="uk">UK</option>
+                            <option value="canada">Canada</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="gender">&nbsp Gender:</lable>
+                    </th>
+                    <th><input type="radio" name="gender" id="male" value="male">Male</input>
+                        <input type="radio" name="gender" id="female" value="female">Female</input>
+                        <input type="radio" name="gender" id="other" value="other">Other</input>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="Number">&nbsp Mobile No. :</lable>
+                    </th>
+                    <select name="Number">
+                        <option value="91">India(+91)</option>
+                        <option value="975">Bhutan(+975)</option>
+                        <option value="61">Aystralia(+61)</option>
+                        <option value="1">Canada(+1)</option>
+                    </select>
+                    <th><input type="number" name="Number" id="Number" value=""></input></th>
+                </tr>
+            
+                <tr id="emailHideout">
+                    <th>
+                        <lable for="email">&nbsp Email:</lable>
+                    </th>
+                    <th><input type="email" name="email" id="email" value=""></input></th>
+                </tr>
+            
+
+                <tr>
+                    <th>
+                        <lable for="uname">&nbsp Username:</lable>
+                    </th>
+                    <th><input type="text" name="uname" id="uname"></input><br><br></th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="passw">&nbsp Password:</lable>
+                    </th>
+                    <th><input type="password" name="passw"></input><br><br></th>
+                </tr>
+                <tr>
+                    <th>
+                        <lable for="Conpassw">&nbsp Confirm Password:</lable>
+                    </th>
+                    <th><input type="password" name="Conpassw"></input></th>
+                </tr>
+                <tr>
+                    <th><input type="submit" name="Submit" onclick="return validateForm()" value="Submit"
+                            class="btn"></input></th>
+                </tr>
+
+            </form>
+        </table>
+    </div>
+
+    <style>
+        * {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        body {
+            background-color: lightgreen;
+        }
+
+        h1 {
+            text-align: center;
+            margin-left: 240px;
+            width: 60%;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        .fm {
+            margin-top: 25px;
+            margin-left: 240px;
+            width: 60%;
+            height: auto;
+            background-color: lightyellow;
+            font-size: 20px;
+            border-radius: 7px;
+            box-shadow: 3px 3px 10px black;
+        }
+
+        table {
+            margin: auto;
+            padding: 10px;
+        }
+
+        input {
+            border-style: outset;
+            border-radius: 5px;
+        }
+
+        .btn {
+            color: white;
+            width: 75px;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+        }
+
+        #emailHideout {
+            display: inline-block;
+        }
+    </style>
+    <script type="text/javascript">
+        /*
+                $(document).ready(function () {
+                    $("#country").change(function () {
+                        var country = $("#country").val();
+                        if (country == "india") {
+                            #emailHideout.style.display = "none";
+                        }
+        
+                        else{
+                            #emailHideout.style.display = "inline-block";
+                        }
+                    });
+                });
+        */
+
+        var val = document.getElementById("country");
+        val.onchange = hideFunc;
+
+        function hideFunc() {
+            var countryl = document.getElementById("country");
+            var countrys = countryl.options[countryl.selectedIndex].value;
+            if (countrys == "india") {
+                document.getElementById("emailHideout").style.visibility = "hidden";
+            }
+            else {
+                document.getElementById("emailHideout").style.visibility = "visible";
+            }
+        }
+    </script>
+</body>
+
+</html>

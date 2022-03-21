@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Area</title>
+    <style>
+        .container{
+            display:grid;
+            gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar'
+            'aside aside sidemenu'
+            'footer footer footer';
+        }
+        .container #navbar h1{
+            float: left;
+            padding-left: 70px;
+        }
+        .box{
+            background-color:rgb(245, 177, 88);
+            padding:16px;
+            border:2px solid black;
+        }
+        ul{
+            padding-right: 250px;
+            float: right;
+            display: flex;
+            
+        }
+        li{ 
+            font-size: 1.2rem;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 7px;
+            margin: 0px 25px;
+            list-style: none;
+            flex-direction: space-between;
+        }
+        li:hover{
+            background-color: rgb(238, 248, 252);
+            transform: scale(1.02);
+        }
+        #navbar{
+            grid-area: navbar;
+            /* display: inline-flex; */
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #sidemenu{
+            grid-area: sidemenu;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            <h1>Naruto Products</h1>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div id="aside" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, hic nulla magni aut praesentium ab ducimus nobis? Vero ut nam voluptas vel veritatis aperiam facere? Aliquid nemo hic expedita mollitia blanditiis quidem. Veritatis possimus et dolorem nihil mollitia praesentium tempore fugit harum labore accusamus. Nemo necessitatibus consequuntur magnam neque corrupti saepe atque in natus officiis, dignissimos deleniti voluptas modi nam soluta, eaque, illo maxime facilis enim aperiam quia incidunt laudantium doloremque possimus! Sed sapiente ad non blanditiis obcaecati excepturi fugit architecto amet placeat veniam repudiandae reiciendis incidunt dicta eligendi nobis, dolore quasi consequatur voluptatibus nam, nemo quibusdam? Accusamus molestias fuga quae, alias dignissimos quibusdam possimus, rerum fugiat voluptates, dolore sequi delectus similique unde aperiam corrupti distinctio aliquam inventore nostrum expedita. Ab nulla doloribus, eius aperiam aut maiores, eum voluptate aliquid officia magnam dolorum dolores animi nostrum magni dolore asperiores autem corrupti veniam ipsum dignissimos commodi modi perferendis? Tempore illum ex recusandae doloremque fuga. Omnis, velit! Nam veritatis non iure! Quasi ullam officia cum sit corrupti placeat deserunt. Corrupti sit consequuntur voluptatibus delectus porro, atque ab iste reiciendis aperiam maiores non. Deserunt, rerum. Ea accusamus porro voluptatibus dolorum! Dolorem fugit facere quibusdam nihil rem ad est sunt quae vitae. Obcaecati itaque voluptatibus odio at est dolores aperiam non, laborum recusandae molestiae ut, in ab tenetur qui ex officia enim. Necessitatibus aperiam eum facilis repellendus placeat dolore deleniti illum distinctio ipsam, quas cumque suscipit fuga dolor consequatur praesentium enim, tempora amet vel provident laborum? Placeat molestias architecto, impedit fugit eaque, optio debitis voluptas similique ex asperiores in quam voluptatibus maxime, amet inventore. Odit officiis aut architecto suscipit voluptatem id consectetur numquam ipsam adipisci laboriosam. Eos sed itaque aperiam a sunt nisi vero expedita omnis non alias inventore doloremque id blanditiis temporibus quo possimus natus atque nesciunt, maxime deserunt veniam et aut? Illum.</div>
+        <div id="sidemanu" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt adipisci vero exercitationem aut quibusdam quaerat dolorum repellendus ab, id ipsa itaque dolores. Adipisci molestias fugiat quo ea officiis sint debitis maxime, ipsum eligendi nesciunt voluptas obcaecati, magnam enim est excepturi ex perferendis fuga consectetur beatae recusandae repellat distinctio numquam quisquam modi! Sapiente voluptate culpa distinctio quia veniam facilis molestiae debitis est, et magnam ipsum maxime aut quos tenetur eum asperiores repudiandae rem illum! Consequuntur hic libero in, placeat obcaecati praesentium nostrum, deserunt aperiam quam voluptatem dolorem? Consequuntur nam, iusto sit repellat deserunt aliquid beatae ipsam quibusdam accusantium dolore ipsum minus fugit, mollitia perferendis voluptates? Dignissimos animi quidem doloremque est hic molestias quae harum excepturi consectetur illo? Quos impedit, accusamus odio totam reprehenderit dolorum! Possimus enim aspernatur distinctio obcaecati doloremque odio.</div>
+        <footer class="box">This is End of the Page</footer>
+        <!-- <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div>
+        <div class="box">Item-16</div> -->
+        
+    </div>   
+</body>
+</html>

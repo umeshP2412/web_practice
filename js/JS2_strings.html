@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2 | Strings and Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is paragraph</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores sit sed libero totam voluptatem deserunt, doloribus maxime aperiam obcaecati nisi deleniti non inventore quod! Sunt voluptas nihil neque, deserunt quod ipsum! Eius, nam quas. Ducimus dolores, asperiores velit non, quaerat totam impedit facilis alias, quod dolor molestias. Aliquid, in mollitia?</p>
+    </div>
+    <script>
+        var str = "Hello World";
+        console.log(str);
+        console.log(str.length);
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.charAt(0));
+        var name = "Umesh";
+        var channel = "CodeWithUmesh";
+        var temp = "Hello "+name+" Welcome to "+channel;
+        var temp2 = `Hello ${name} Welcome to ${channel}`;
+        console.log(temp);
+        console.log(temp2);
+
+        var str2 = "This is a String";
+        console.log(str2.indexOf("is"));
+        console.log(str2.lastIndexOf("is"));
+        console.log(str2.slice(1,7));
+        console.log(str2.slice(-5));
+        console.log(str2.substring(1,7));
+        console.log(str2.substr(1,7));
+        console.log(str2.replace('string','Umesh'));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS13_JSON example</title>
+</head>
+<body>
+    <h1 class="contaiiner">
+        This is JSON example, open console
+    </h1>
+    <div class="container">
+        <p>
+            <button id="btn">Click me</button>
+        </p>
+    </div>
+    <script>
+        let myobj = {
+            name: "Umesh",
+            age: 24,
+            city: "Ahmedabad",
+            favFood: ["Pizza", "Burger", "Pasta"],
+            favPlaces: [
+                {
+                    name: "Gandhinagar",
+                    type: "City"
+                },
+                {
+                    name: "Indroda Park",
+                    type: "Park"
+                },
+                {
+                    name: "theCrownCafe",
+                    type: "Cafe"
+                }
+            ]
+        };
+
+        console.log(myobj);
+        console.log("type of myobj is " + typeof(myobj));
+        console.log(myobj.favPlaces[1].name + " and it is " + myobj.favPlaces[1].type);
+
+        myobjstr = JSON.stringify(myobj);
+        console.log(myobjstr)
+        console.log("type of myobjstr is " + typeof(myobjstr));
+
+        myobjstr1 = myobjstr.replace("Gandhinagar", "Ahmedabad");
+        console.log(myobjstr1);
+
+        myobj2 = JSON.parse(myobjstr1);
+        console.log(myobj2);
+        console.log("type of myobj2 is " + typeof(myobj2));
+
+    </script>
+</body>
+</html>

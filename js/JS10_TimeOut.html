@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS10_SetTimeOut_ClearTimeour</title>
+    <style>
+
+        #time{
+            /* width: 100px; */
+            height: 100px;
+            background-color: red;
+            border-radius: 5%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            line-height: 100px;
+            font-size: 50px;
+            color: white;
+            font-weight: bold;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiiner">
+        <h1> This is SetTimeOut and ClearTimeOut Example. Please Open Console</h1>
+
+        <h2>Current time is <span id="time"></span></h2>
+    </div>
+    <script>
+        console.log("Timeout example");
+
+        function greet(name, endText){
+            console.log("Hello " + name + endText);
+        }
+        ind = setTimeout(greet, 4000, "Umesh", "....!");    // setTimeout(function, time, arg1, arg2, ...) this method calls a function or evaluates an expression after a specified number of milliseconds.
+
+        //setTimeout(greet(), 4000, "Umesh", "....!"); // Syntax Error : TypeError: greet is not a function ---> This is because we are passing function as a parameter.
+        
+        clearTimeout(ind); // clearTimeout(function) this method clears a timer set with the setTimeout() method.
+
+        /*
+
+        console.log("Interval example");
+
+        function funC(){
+        console.log("This is interval example");
+        }
+
+        setInterval(funC, 2000);  // setInterval(function, time) this method calls a function or evaluates an expression at specified intervals (in milliseconds).
+        */
+
+        function time(){
+            let t = new Date();
+            document.getElementById("time").innerHTML = t;
+        }
+
+        setInterval(time, 1000);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS4_Arrays&Objects</title>
+    <style>
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1{
+            color: #ff0000;
+        }
+        p{
+            background-color: rgb(177, 252, 255);
+            color: #295e1c;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arrays and Objects</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia et assumenda dignissimos unde, sunt exercitationem odio quod blanditiis neque laboriosam aliquid, error maiores consequuntur voluptatibus atque quaerat doloribus, nesciunt enim voluptates pariatur quasi autem placeat ullam? Fugit aperiam quam eligendi quasi reiciendis dolor nesciunt laboriosam.</p>
+    </div>
+    <script>
+
+        // Array
+
+        let arr1 = [7, 2, 8, 1, 5, "Umesh", undefined, null, true, false, {name: "Umesh", age: 25}];
+        // console.log(arr1);
+        // console.log(arr1[0]);
+        // let type = typeof arr1;
+        // console.log(type);
+        // let len = arr1.length;
+        // console.log(len);
+        // let arr3 = arr1.sort();
+        // console.log(arr3);
+
+        arr1.push("Hello");
+        console.log(arr1);
+
+        let arr2 = new Array(1, 4, 2, "Umesh", true);
+        console.log(arr2);
+        
+        // Objects
+
+        let obj1 = {
+            name: "Umesh",
+            age: 25,
+            salary: "20",
+            address: {
+                city: "Pune",
+                state: "Maharashtra",
+                country: "India"
+            }
+        };
+
+
+    </script>
+</body>
+</html>
